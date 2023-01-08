@@ -8,7 +8,7 @@ app.use(cors())
 app.use(express.json());
 // app.use(authHandler)
 mongoose
-  .connect("mongodb://0.0.0.0:27017/studentdat")
+  .connect("mongodb://0.0.0.0:27017/student")
   .then(() => console.log("Connected to MongoDB"))
   .catch((error) => console.log(`Couldn't connected to MongoDB, ${error}`));
   app.use("/",router) 
