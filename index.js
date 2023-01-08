@@ -4,6 +4,7 @@ const router = require("./src/router/studentsignup");
 // const authHandler = require ('./src/middleware/auth')
 const cors = require('cors')
 const app = express();
+
 app.use(cors())
 app.use(express.json());
 // app.use(authHandler)

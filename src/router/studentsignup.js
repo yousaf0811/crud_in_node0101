@@ -106,7 +106,7 @@ router.delete("/:userId/delete",authHandler,async (req,res)=>{
     })
   );
 //Signup New User
-router.post("/student_signup", async (req, res) => {
+router.post("/create", async (req, res) => {
     const payload = req.body;
     let user = new studentdata(payload);
     user = await user.save();
